@@ -58,7 +58,7 @@ if __name__ == '__main__':
             i = 0
             while i < acesso:
                 lista = [
-                'IPS BRASIL',
+                'IPS BRASILeirus',
                 '13.250.112.45:17985',
                 ]
 
