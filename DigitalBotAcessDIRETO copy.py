@@ -5,7 +5,7 @@ import pyautogui
 
 if __name__ == '__main__':
 
-    pais = int(input("SELECIONE A OPÇÃO DESEJADA: \n >> 1-Brasil \n >> 2-Singapura: \n >> "))
+    pais = int(input("SELECIONE A OPÇÃO DESEJADA: \n >> 1-Brasil \n >> 2-Singapura: \n >> 3-Estados Unidos: \n >> "))
     acesso = int(input("Digite a quantidade de acessos: "))
     opcao = int(input('Digite 1 para paginas de Single e 2 para Datacenter \n >>'))
 
