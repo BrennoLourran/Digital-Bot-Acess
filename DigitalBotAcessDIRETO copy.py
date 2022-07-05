@@ -42,11 +42,11 @@ if __name__ == '__main__':
                 sleeping3 = random.randint(10, 25)
                 
                 #LISTA DE PROXYS
-                lista = [
+                listaBR = [
                 '13.250.112.45:17985',
                 ]
 
-                PROXY = random.choice(lista)
+                PROXY = random.choice(listaBR)
                 print('Utilizando o IP: {} para Acessar o Brasil: '.format(PROXY))
                 options = uc.ChromeOptions()
                 options.add_argument(f'--proxy-server={PROXY}')
@@ -144,34 +144,44 @@ if __name__ == '__main__':
         
         #ESCOLHA DE DATACENTER
         if opcao == 2:
-            links = [
-            'https://digitalrecovery.com/it/recuperare-ransomware/',
-            'https://digitalrecovery.com/it/recupero-raid/',
-            'https://digitalrecovery.com/it/recuperare-storage-nas-das-san/',
-            'https://digitalrecovery.com/it/recuperare-database/',
-            'https://digitalrecovery.com/it/recuperare-virtual-machine/',
-            'https://digitalrecovery.com/it/recuperare-nastri-magnetici/',
-            ]
-            
-            #ESCOLHA DE URL ALEATORIA
-            url = random.choice(links)
-            print('Acessando a URL: {}'.format(url))
-            
-            #TEMPO ALEATORIO
-            randomtimeone = random.randint(900, 1900)
-            timing = randomtimeone - (randomtimeone * 2)
-
-            randomtimetwo = random.randint(500, 1800)
-            timing2 = randomtimetwo - (randomtimetwo * 2)
-
-            #SLEEP ALEATORIO
-            sleeping = random.randint(10, 15)
-            sleeping2 = random.randint(10, 20)
-            sleeping3 = random.randint(10, 25)
 
             i = 0
             while i < acesso:
-                driver = uc.Chrome()
+                links = [
+                'https://digitalrecovery.com/it/recuperare-ransomware/',
+                'https://digitalrecovery.com/it/recupero-raid/',
+                'https://digitalrecovery.com/it/recuperare-storage-nas-das-san/',
+                'https://digitalrecovery.com/it/recuperare-database/',
+                'https://digitalrecovery.com/it/recuperare-virtual-machine/',
+                'https://digitalrecovery.com/it/recuperare-nastri-magnetici/',
+                ]
+                
+                #ESCOLHA DE URL ALEATORIA
+                url = random.choice(links)
+                print('Acessando a URL: {}'.format(url))
+                
+                #TEMPO ALEATORIO
+                randomtimeone = random.randint(900, 1900)
+                timing = randomtimeone - (randomtimeone * 2)
+
+                randomtimetwo = random.randint(500, 1800)
+                timing2 = randomtimetwo - (randomtimetwo * 2)
+
+                #SLEEP ALEATORIO
+                sleeping = random.randint(10, 15)
+                sleeping2 = random.randint(10, 20)
+                sleeping3 = random.randint(10, 25)
+
+                #LISTA DE PROXYS
+                listaIT = [
+                '13.250.112.45:17985',
+                ]
+
+                PROXY = random.choice(listaIT)
+                print('Utilizando o IP: {} para Acessar a Itália: '.format(PROXY))
+                options = uc.ChromeOptions()
+                options.add_argument(f'--proxy-server={PROXY}')
+                driver = uc.Chrome(options=options)
 
                 driver.get(url)
                 time.sleep(sleeping)
@@ -202,34 +212,44 @@ if __name__ == '__main__':
         
         #ESCOLHA DE DATACENTER
         if opcao == 2:
-            links = [
-            'https://digitalrecovery.com/en/ransomware-recovery/',
-            'https://digitalrecovery.com/en/recover-raid/',
-            'https://digitalrecovery.com/en/recover-database/',
-            'https://digitalrecovery.com/en/recover-storage-nas-das-san/',
-            'https://digitalrecovery.com/en/recover-virtual-machine/',
-            'https://digitalrecovery.com/en/recover-magnetic-tapes/',
-            ]
-            
-            #ESCOLHA DE URL ALEATORIA
-            url = random.choice(links)
-            print('Acessando a URL: {}'.format(url))
-            
-            #TEMPO ALEATORIO
-            randomtimeone = random.randint(900, 1900)
-            timing = randomtimeone - (randomtimeone * 2)
-
-            randomtimetwo = random.randint(500, 1800)
-            timing2 = randomtimetwo - (randomtimetwo * 2)
-
-            #SLEEP ALEATORIO
-            sleeping = random.randint(10, 15)
-            sleeping2 = random.randint(10, 20)
-            sleeping3 = random.randint(10, 25)
 
             i = 0
             while i < acesso:
-                driver = uc.Chrome()
+                links = [
+                'https://digitalrecovery.com/en/ransomware-recovery/',
+                'https://digitalrecovery.com/en/recover-raid/',
+                'https://digitalrecovery.com/en/recover-database/',
+                'https://digitalrecovery.com/en/recover-storage-nas-das-san/',
+                'https://digitalrecovery.com/en/recover-virtual-machine/',
+                'https://digitalrecovery.com/en/recover-magnetic-tapes/',
+                ]
+                
+                #ESCOLHA DE URL ALEATORIA
+                url = random.choice(links)
+                print('Acessando a URL: {}'.format(url))
+                
+                #TEMPO ALEATORIO
+                randomtimeone = random.randint(900, 1900)
+                timing = randomtimeone - (randomtimeone * 2)
+
+                randomtimetwo = random.randint(500, 1800)
+                timing2 = randomtimetwo - (randomtimetwo * 2)
+
+                #SLEEP ALEATORIO
+                sleeping = random.randint(10, 15)
+                sleeping2 = random.randint(10, 20)
+                sleeping3 = random.randint(10, 25)
+
+                #LISTA DE PROXYS
+                listaEUA = [
+                '13.250.112.45:17985',
+                ]
+
+                PROXY = random.choice(listaEUA)
+                print('Utilizando o IP: {} para Acessar o Estados Unidos: '.format(PROXY))
+                options = uc.ChromeOptions()
+                options.add_argument(f'--proxy-server={PROXY}')
+                driver = uc.Chrome(options=options)
 
                 driver.get(url)
                 time.sleep(sleeping)
@@ -258,34 +278,44 @@ if __name__ == '__main__':
         
         #ESCOLHA DE DATACENTER
         if opcao == 2:
-            links = [
-            'https://www.digitalrecoverycenter.de/ransomware-datenrettung/',
-            'https://www.digitalrecoverycenter.de/server-datenrettung-server-recovery/',
-            'https://www.digitalrecoverycenter.de/raid-datenrettung/',
-            'https://www.digitalrecoverycenter.de/datenrettung-virtualisierung/',
-            'https://www.digitalrecoverycenter.de/datenbank-datenrettung/',
-            'https://www.digitalrecoverycenter.de/datenrettung-von-tapes/',
-            ]
-            
-            #ESCOLHA DE URL ALEATORIA
-            url = random.choice(links)
-            print('Acessando a URL: {}'.format(url))
-            
-            #TEMPO ALEATORIO
-            randomtimeone = random.randint(900, 1900)
-            timing = randomtimeone - (randomtimeone * 2)
-
-            randomtimetwo = random.randint(500, 1800)
-            timing2 = randomtimetwo - (randomtimetwo * 2)
-
-            #SLEEP ALEATORIO
-            sleeping = random.randint(10, 15)
-            sleeping2 = random.randint(10, 20)
-            sleeping3 = random.randint(10, 25)
 
             i = 0
             while i < acesso:
-                driver = uc.Chrome()
+                links = [
+                'https://www.digitalrecoverycenter.de/ransomware-datenrettung/',
+                'https://www.digitalrecoverycenter.de/server-datenrettung-server-recovery/',
+                'https://www.digitalrecoverycenter.de/raid-datenrettung/',
+                'https://www.digitalrecoverycenter.de/datenrettung-virtualisierung/',
+                'https://www.digitalrecoverycenter.de/datenbank-datenrettung/',
+                'https://www.digitalrecoverycenter.de/datenrettung-von-tapes/',
+                ]
+                
+                #ESCOLHA DE URL ALEATORIA
+                url = random.choice(links)
+                print('Acessando a URL: {}'.format(url))
+                
+                #TEMPO ALEATORIO
+                randomtimeone = random.randint(900, 1900)
+                timing = randomtimeone - (randomtimeone * 2)
+
+                randomtimetwo = random.randint(500, 1800)
+                timing2 = randomtimetwo - (randomtimetwo * 2)
+
+                #SLEEP ALEATORIO
+                sleeping = random.randint(10, 15)
+                sleeping2 = random.randint(10, 20)
+                sleeping3 = random.randint(10, 25)
+
+                #LISTA DE PROXYS
+                listaAL = [
+                '13.250.112.45:17985',
+                ]
+
+                PROXY = random.choice(listaAL)
+                print('Utilizando o IP: {} para Acessar da Alemanha: '.format(PROXY))
+                options = uc.ChromeOptions()
+                options.add_argument(f'--proxy-server={PROXY}')
+                driver = uc.Chrome(options=options)
 
                 driver.get(url)
                 time.sleep(sleeping)
@@ -314,34 +344,44 @@ if __name__ == '__main__':
         
         #ESCOLHA DE DATACENTER
         if opcao == 2:
-            links = [
-            'https://digitalrecovery.com/fr/ransomware-recuperation/',
-            'https://digitalrecovery.com/fr/recuperer-raid/',
-            'https://digitalrecovery.com/fr/recuperation-stockage-nas-das-san/',
-            'https://digitalrecovery.com/fr/recuperer-base-de-donnees/',
-            'https://digitalrecovery.com/fr/recuperer-machine-virtuelle/',
-            'https://digitalrecovery.com/fr/recuperer-bandes-magnetiques/',
-            ]
-            
-            #ESCOLHA DE URL ALEATORIA
-            url = random.choice(links)
-            print('Acessando a URL: {}'.format(url))
-            
-            #TEMPO ALEATORIO
-            randomtimeone = random.randint(900, 1900)
-            timing = randomtimeone - (randomtimeone * 2)
-
-            randomtimetwo = random.randint(500, 1800)
-            timing2 = randomtimetwo - (randomtimetwo * 2)
-
-            #SLEEP ALEATORIO
-            sleeping = random.randint(10, 15)
-            sleeping2 = random.randint(10, 20)
-            sleeping3 = random.randint(10, 25)
 
             i = 0
             while i < acesso:
-                driver = uc.Chrome()
+                links = [
+                'https://digitalrecovery.com/fr/ransomware-recuperation/',
+                'https://digitalrecovery.com/fr/recuperer-raid/',
+                'https://digitalrecovery.com/fr/recuperation-stockage-nas-das-san/',
+                'https://digitalrecovery.com/fr/recuperer-base-de-donnees/',
+                'https://digitalrecovery.com/fr/recuperer-machine-virtuelle/',
+                'https://digitalrecovery.com/fr/recuperer-bandes-magnetiques/',
+                ]
+                
+                #ESCOLHA DE URL ALEATORIA
+                url = random.choice(links)
+                print('Acessando a URL: {}'.format(url))
+                
+                #TEMPO ALEATORIO
+                randomtimeone = random.randint(900, 1900)
+                timing = randomtimeone - (randomtimeone * 2)
+
+                randomtimetwo = random.randint(500, 1800)
+                timing2 = randomtimetwo - (randomtimetwo * 2)
+
+                #SLEEP ALEATORIO
+                sleeping = random.randint(10, 15)
+                sleeping2 = random.randint(10, 20)
+                sleeping3 = random.randint(10, 25)
+
+                #LISTA DE PROXYS
+                listaFR = [
+                '13.250.112.45:17985',
+                ]
+
+                PROXY = random.choice(listaFR)
+                print('Utilizando o IP: {} para Acessar o Brasil: '.format(PROXY))
+                options = uc.ChromeOptions()
+                options.add_argument(f'--proxy-server={PROXY}')
+                driver = uc.Chrome(options=options)
 
                 driver.get(url)
                 time.sleep(sleeping)
@@ -370,34 +410,44 @@ if __name__ == '__main__':
         
         #ESCOLHA DE DATACENTER
         if opcao == 2:
-            links = [
-            'https://digitalrecovery.com/uk/ransomware-recovery/',
-            'https://digitalrecovery.com/uk/recover-raid/',
-            'https://digitalrecovery.com/uk/recover-storage-nas-das-san/',
-            'https://digitalrecovery.com/uk/recover-database/',
-            'https://digitalrecovery.com/uk/recover-virtual-machine/',
-            'https://digitalrecovery.com/uk/recover-magnetic-tapes/',
-            ]
-            
-            #ESCOLHA DE URL ALEATORIA
-            url = random.choice(links)
-            print('Acessando a URL: {}'.format(url))
-            
-            #TEMPO ALEATORIO
-            randomtimeone = random.randint(900, 1900)
-            timing = randomtimeone - (randomtimeone * 2)
-
-            randomtimetwo = random.randint(500, 1800)
-            timing2 = randomtimetwo - (randomtimetwo * 2)
-
-            #SLEEP ALEATORIO
-            sleeping = random.randint(10, 15)
-            sleeping2 = random.randint(10, 20)
-            sleeping3 = random.randint(10, 25)
 
             i = 0
             while i < acesso:
-                driver = uc.Chrome()
+                links = [
+                'https://digitalrecovery.com/uk/ransomware-recovery/',
+                'https://digitalrecovery.com/uk/recover-raid/',
+                'https://digitalrecovery.com/uk/recover-storage-nas-das-san/',
+                'https://digitalrecovery.com/uk/recover-database/',
+                'https://digitalrecovery.com/uk/recover-virtual-machine/',
+                'https://digitalrecovery.com/uk/recover-magnetic-tapes/',
+                ]
+                
+                #ESCOLHA DE URL ALEATORIA
+                url = random.choice(links)
+                print('Acessando a URL: {}'.format(url))
+                
+                #TEMPO ALEATORIO
+                randomtimeone = random.randint(900, 1900)
+                timing = randomtimeone - (randomtimeone * 2)
+
+                randomtimetwo = random.randint(500, 1800)
+                timing2 = randomtimetwo - (randomtimetwo * 2)
+
+                #SLEEP ALEATORIO
+                sleeping = random.randint(10, 15)
+                sleeping2 = random.randint(10, 20)
+                sleeping3 = random.randint(10, 25)
+
+                #LISTA DE PROXYS
+                listaUK = [
+                '13.250.112.45:17985',
+                ]
+
+                PROXY = random.choice(listaUK)
+                print('Utilizando o IP: {} para Acessar o Brasil: '.format(PROXY))
+                options = uc.ChromeOptions()
+                options.add_argument(f'--proxy-server={PROXY}')
+                driver = uc.Chrome(options=options)
 
                 driver.get(url)
                 time.sleep(sleeping)
@@ -426,34 +476,44 @@ if __name__ == '__main__':
         
         #ESCOLHA DE DATACENTER
         if opcao == 2:
-            links = [
-            'https://digitalrecovery.com/es/recuperacion-ransomware/',
-            'https://digitalrecovery.com/es/recuperacion-raid/',
-            'https://digitalrecovery.com/es/recuperacion-storage-nas-das-san/',
-            'https://digitalrecovery.com/es/recuperar-base-de-datos/',
-            'https://digitalrecovery.com/es/recuperacion-maquinas-virtuales/',
-            'https://digitalrecovery.com/es/recuperacion-cintas-magneticas/',
-            ]
-            
-            #ESCOLHA DE URL ALEATORIA
-            url = random.choice(links)
-            print('Acessando a URL: {}'.format(url))
-            
-            #TEMPO ALEATORIO
-            randomtimeone = random.randint(900, 1900)
-            timing = randomtimeone - (randomtimeone * 2)
-
-            randomtimetwo = random.randint(500, 1800)
-            timing2 = randomtimetwo - (randomtimetwo * 2)
-
-            #SLEEP ALEATORIO
-            sleeping = random.randint(10, 15)
-            sleeping2 = random.randint(10, 20)
-            sleeping3 = random.randint(10, 25)
 
             i = 0
             while i < acesso:
-                driver = uc.Chrome()
+                links = [
+                'https://digitalrecovery.com/es/recuperacion-ransomware/',
+                'https://digitalrecovery.com/es/recuperacion-raid/',
+                'https://digitalrecovery.com/es/recuperacion-storage-nas-das-san/',
+                'https://digitalrecovery.com/es/recuperar-base-de-datos/',
+                'https://digitalrecovery.com/es/recuperacion-maquinas-virtuales/',
+                'https://digitalrecovery.com/es/recuperacion-cintas-magneticas/',
+                ]
+                
+                #ESCOLHA DE URL ALEATORIA
+                url = random.choice(links)
+                print('Acessando a URL: {}'.format(url))
+                
+                #TEMPO ALEATORIO
+                randomtimeone = random.randint(900, 1900)
+                timing = randomtimeone - (randomtimeone * 2)
+
+                randomtimetwo = random.randint(500, 1800)
+                timing2 = randomtimetwo - (randomtimetwo * 2)
+
+                #SLEEP ALEATORIO
+                sleeping = random.randint(10, 15)
+                sleeping2 = random.randint(10, 20)
+                sleeping3 = random.randint(10, 25)
+
+                #LISTA DE PROXYS
+                listaES = [
+                '13.250.112.45:17985',
+                ]
+
+                PROXY = random.choice(listaES)
+                print('Utilizando o IP: {} para Acessar o Brasil: '.format(PROXY))
+                options = uc.ChromeOptions()
+                options.add_argument(f'--proxy-server={PROXY}')
+                driver = uc.Chrome(options=options)
 
                 driver.get(url)
                 time.sleep(sleeping)
@@ -473,60 +533,73 @@ if __name__ == '__main__':
                 pyautogui.scroll(timing)
 
     elif pais == 8:
-        print('-----Utilizando IPs de Portugal-----')
-        
-        #ESCOLHA DE SINGLE
-        if opcao == 1:
+
+
+
+            print('-----Utilizando IPs de Portugal-----')
             
-            print('Não temos SINGLE em Portugal.')
-        
-        #ESCOLHA DE DATACENTER
-        if opcao == 2:
-            links = [
-            'https://digitalrecovery.com/pt/ransomware-recuperacao/',
-            'https://digitalrecovery.com/pt/recuperar-raid/',
-            'https://digitalrecovery.com/pt/recuperar-storage-nas-das-san/',
-            'https://digitalrecovery.com/pt/recupera-base-de-dados/',
-            'https://digitalrecovery.com/pt/recuperar-maquina-virtual/',
-            'https://digitalrecovery.com/pt/recuperar-fitas-magneticas/',
-            ]
+            #ESCOLHA DE SINGLE
+            if opcao == 1:
+                
+                print('Não temos SINGLE em Portugal.')
             
-            #ESCOLHA DE URL ALEATORIA
-            url = random.choice(links)
-            print('Acessando a URL: {}'.format(url))
-            
-            #TEMPO ALEATORIO
-            randomtimeone = random.randint(900, 1900)
-            timing = randomtimeone - (randomtimeone * 2)
+            #ESCOLHA DE DATACENTER
+            if opcao == 2:
 
-            randomtimetwo = random.randint(500, 1800)
-            timing2 = randomtimetwo - (randomtimetwo * 2)
+                i = 0
+                while i < acesso:
+                    links = [
+                    'https://digitalrecovery.com/pt/ransomware-recuperacao/',
+                    'https://digitalrecovery.com/pt/recuperar-raid/',
+                    'https://digitalrecovery.com/pt/recuperar-storage-nas-das-san/',
+                    'https://digitalrecovery.com/pt/recupera-base-de-dados/',
+                    'https://digitalrecovery.com/pt/recuperar-maquina-virtual/',
+                    'https://digitalrecovery.com/pt/recuperar-fitas-magneticas/',
+                    ]
+                    
+                    #ESCOLHA DE URL ALEATORIA
+                    url = random.choice(links)
+                    print('Acessando a URL: {}'.format(url))
+                    
+                    #TEMPO ALEATORIO
+                    randomtimeone = random.randint(900, 1900)
+                    timing = randomtimeone - (randomtimeone * 2)
 
-            #SLEEP ALEATORIO
-            sleeping = random.randint(10, 15)
-            sleeping2 = random.randint(10, 20)
-            sleeping3 = random.randint(10, 25)
+                    randomtimetwo = random.randint(500, 1800)
+                    timing2 = randomtimetwo - (randomtimetwo * 2)
 
-            i = 0
-            while i < acesso:
-                driver = uc.Chrome()
+                    #SLEEP ALEATORIO
+                    sleeping = random.randint(10, 15)
+                    sleeping2 = random.randint(10, 20)
+                    sleeping3 = random.randint(10, 25)
 
-                driver.get(url)
-                time.sleep(sleeping)
+                    #LISTA DE PROXYS
+                    listaPT = [
+                    '13.250.112.45:17985',
+                    ]
 
-                pyautogui.scroll(timing)
-                time.sleep(sleeping2)
+                    PROXY = random.choice(listaPT)
+                    print('Utilizando o IP: {} para Acessar o Brasil: '.format(PROXY))
+                    options = uc.ChromeOptions()
+                    options.add_argument(f'--proxy-server={PROXY}')
+                    driver = uc.Chrome(options=options)
 
-                pyautogui.scroll(timing)
-                time.sleep(sleeping3)
+                    driver.get(url)
+                    time.sleep(sleeping)
 
-                pyautogui.scroll(timing2)
-                time.sleep(sleeping2)
+                    pyautogui.scroll(timing)
+                    time.sleep(sleeping2)
 
-                #CLIQUE NA LOGO
-                driver.find_element_by_xpath('/html/body/div[1]/header[1]/div/div/div/section/div/div[1]/div/div/div/a/img').click()
-                time.sleep(sleeping3)
-                pyautogui.scroll(timing)
+                    pyautogui.scroll(timing)
+                    time.sleep(sleeping3)
+
+                    pyautogui.scroll(timing2)
+                    time.sleep(sleeping2)
+
+                    #CLIQUE NA LOGO
+                    driver.find_element_by_xpath('/html/body/div[1]/header[1]/div/div/div/section/div/div[1]/div/div/div/a/img').click()
+                    time.sleep(sleeping3)
+                    pyautogui.scroll(timing)
 
     elif pais == 9:
         print('-----Utilizando IPs do Resto do Mundo-----')
@@ -538,51 +611,73 @@ if __name__ == '__main__':
         
         #ESCOLHA DE DATACENTER
         if opcao == 2:
-            links = [
-            'https://digitalrecovery.com/zh-hans/ransomware-files-decrypt/',
-            'https://digitalrecovery.com/ar-sa/decrypt-ransomware-files/',
-            'https://digitalrecovery.com/en-uae/decrypt-ransomware-files/',
-            'https://digitalrecovery.com/ar-uae/decrypt-ransomware-files/',
-            'https://digitalrecovery.com/en-au/decrypt-ransomware-files/',
-            'https://digitalrecovery.com/en-ca/decrypt-ransomware-files/',
-            'https://digitalrecovery.com/en-au/decrypt-ransomware-files/',
-            'https://digitalrecovery.com/en-in/decrypt-ransomware-files/',
-            'https://digitalrecovery.com/es-ec/descifrar-archivos-ransomware/',
-            'https://digitalrecovery.com/fr-be/decrypter-les-fichiers-ransomware/',
-            'https://digitalrecovery.com/fr-ca/decrypter-les-fichiers-ransomware/',
-            'https://digitalrecovery.com/fr-ch/decrypter-les-fichiers-ransomware/',
-            'https://digitalrecovery.com/en-id/decrypt-ransomware-files/',
-            'https://digitalrecovery.com/en-is/decrypt-ransomware-files/',
-            'https://digitalrecovery.com/jp/ransomware-files-decrypt/',
-            'https://digitalrecovery.com/ar-ma/decrypt-ransomware-files/',
-            'https://digitalrecovery.com/en-nz/decrypt-ransomware-files/',
-            'https://digitalrecovery.com/es-do/descifrar-archivos-ransomware/',
-            'https://digitalrecovery.com/en-sg/decrypt-ransomware-files/',
-            'https://digitalrecovery.com/es-ar/descifrar-archivos-ransomware/',
-            'https://digitalrecovery.com/es-mx/descifrar-archivos-ransomware/',
-            'https://digitalrecovery.com/es-cl/descifrar-archivos-ransomware/',
-            'https://digitalrecovery.com/es-pe/descifrar-archivos-ransomware/',
-            ]
-            
-            #ESCOLHA DE URL ALEATORIA
-            url = random.choice(links)
-            print('Acessando a URL: {}'.format(url))
-            
-            #TEMPO ALEATORIO
-            randomtimeone = random.randint(900, 1900)
-            timing = randomtimeone - (randomtimeone * 2)
-
-            randomtimetwo = random.randint(500, 1800)
-            timing2 = randomtimetwo - (randomtimetwo * 2)
-
-            #SLEEP ALEATORIO
-            sleeping = random.randint(10, 15)
-            sleeping2 = random.randint(10, 20)
-            sleeping3 = random.randint(10, 25)
 
             i = 0
             while i < acesso:
-                driver = uc.Chrome()
+                links = [
+                'https://digitalrecovery.com/zh-hans/ransomware-files-decrypt/',
+                'https://digitalrecovery.com/ar-sa/decrypt-ransomware-files/',
+                'https://digitalrecovery.com/en-uae/decrypt-ransomware-files/',
+                'https://digitalrecovery.com/ar-uae/decrypt-ransomware-files/',
+                'https://digitalrecovery.com/en-au/decrypt-ransomware-files/',
+                'https://digitalrecovery.com/en-ca/decrypt-ransomware-files/',
+                'https://digitalrecovery.com/en-au/decrypt-ransomware-files/',
+                'https://digitalrecovery.com/en-in/decrypt-ransomware-files/',
+                'https://digitalrecovery.com/es-ec/descifrar-archivos-ransomware/',
+                'https://digitalrecovery.com/fr-be/decrypter-les-fichiers-ransomware/',
+                'https://digitalrecovery.com/fr-ca/decrypter-les-fichiers-ransomware/',
+                'https://digitalrecovery.com/fr-ch/decrypter-les-fichiers-ransomware/',
+                'https://digitalrecovery.com/en-id/decrypt-ransomware-files/',
+                'https://digitalrecovery.com/en-is/decrypt-ransomware-files/',
+                'https://digitalrecovery.com/jp/ransomware-files-decrypt/',
+                'https://digitalrecovery.com/ar-ma/decrypt-ransomware-files/',
+                'https://digitalrecovery.com/en-nz/decrypt-ransomware-files/',
+                'https://digitalrecovery.com/es-do/descifrar-archivos-ransomware/',
+                'https://digitalrecovery.com/en-sg/decrypt-ransomware-files/',
+                'https://digitalrecovery.com/es-ar/descifrar-archivos-ransomware/',
+                'https://digitalrecovery.com/es-mx/descifrar-archivos-ransomware/',
+                'https://digitalrecovery.com/es-cl/descifrar-archivos-ransomware/',
+                'https://digitalrecovery.com/es-pe/descifrar-archivos-ransomware/',
+                ]
+                
+                #PÁGINAS DE RANSOMWARE
+                paginas = [
+                '/html/body/div[1]/section[6]/div/div/div/section[1]/div/div[2]/div/div/div/a/div[1]/div[2]',
+                '/html/body/div[1]/section[6]/div/div/div/section[1]/div/div[3]/div/div/div/a/div[1]/div[2]',
+                '/html/body/div[1]/section[6]/div/div/div/section[2]/div/div[1]/div/div/div/a/div[1]/div[2]',
+                '/html/body/div[1]/section[6]/div/div/div/section[2]/div/div[2]/div/div/div/a/div[1]/div[2]',
+                '/html/body/div[1]/section[6]/div/div/div/section[2]/div/div[3]/div/div/div/a/div[1]/div[2]',
+                ]
+
+                #ESCOLHA DE PÁGINA ALEATORIA
+                pgr = random.choice(paginas)
+
+                #ESCOLHA DE URL ALEATORIA
+                url = random.choice(links)
+                print('Acessando a URL: {}'.format(url))
+                
+                #TEMPO ALEATORIO
+                randomtimeone = random.randint(900, 1900)
+                timing = randomtimeone - (randomtimeone * 2)
+
+                randomtimetwo = random.randint(500, 1800)
+                timing2 = randomtimetwo - (randomtimetwo * 2)
+
+                #SLEEP ALEATORIO
+                sleeping = random.randint(10, 15)
+                sleeping2 = random.randint(10, 20)
+                sleeping3 = random.randint(10, 25)
+
+                #LISTA DE PROXYS
+                listaMUNDO = [
+                '13.250.112.45:17985',
+                ]
+
+                PROXY = random.choice(listaMUNDO)
+                print('Utilizando o IP: {} para Acessar o Brasil: '.format(PROXY))
+                options = uc.ChromeOptions()
+                options.add_argument(f'--proxy-server={PROXY}')
+                driver = uc.Chrome(options=options)
 
                 driver.get(url)
                 time.sleep(sleeping)
@@ -597,7 +692,7 @@ if __name__ == '__main__':
                 time.sleep(sleeping2)
 
                 #CLIQUE NA LOGO
-                driver.find_element_by_xpath('/html/body/div[1]/section[6]/div/div/div/section[1]/div/div[3]/div/div/div/a/div[1]/div[2]').click()
+                driver.find_element_by_xpath(pgr).click()
                 time.sleep(sleeping3)
                 pyautogui.scroll(timing)
 
